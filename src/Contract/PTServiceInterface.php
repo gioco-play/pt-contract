@@ -86,10 +86,10 @@ interface PTServiceInterface {
      * 營商帳號轉換為遊戲商帳號
      * @param string $opCode
      * @param array $vendor
-     * @param array $member
+     * @param string $memberCode
      * @return mixed
      */
-    function accountToVendor(string $opCode, array $vendor, array $member);
+    function accountToVendor(string $opCode, array $vendor, string $memberCode);
 
     /**
      * 遊戲商帳號轉換為營商帳號
